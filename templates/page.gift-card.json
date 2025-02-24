@@ -1,0 +1,82 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "dynamic_rich_text_hfRUzb": {
+      "type": "dynamic-rich-text",
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
+      "settings": {
+        "width": "regular",
+        "title": "GIVE THE GIFT OF ONE LOVE!",
+        "text": "",
+        "heading_size": "large",
+        "text_alignment": "center"
+      }
+    },
+    "dynamic_promo_grid_wwTFd7": {
+      "type": "dynamic-promo-grid",
+      "blocks": {
+        "promotion_E8bbzV": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/EGiftCard-image_1_2fce1165-61c1-4551-8b70-932398d2c6ae.png",
+            "title": "SHOP E-GIFT CARDS",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "https://raisingcanes.wgiftcard.com/responsive/personalize_responsive/chooseDesign/raisingcanes/1",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#414141",
+            "opacity": 47
+          }
+        },
+        "promotion_p8kNX7": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Physical_Gift_Card_Evergreen_81710cbc-dd31-4f2a-a124-c6e5ceca8320.png",
+            "title": "SHOP PHYSICAL GIFT CARDS",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "shopify://collections/gift-cards",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#414141",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "promotion_E8bbzV",
+        "promotion_p8kNX7"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "section_height": "medium",
+        "section_columns": 2,
+        "text_alignment": "center-center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dynamic_rich_text_hfRUzb",
+    "dynamic_promo_grid_wwTFd7"
+  ]
+}

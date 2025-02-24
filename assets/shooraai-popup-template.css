@@ -1,0 +1,621 @@
+/* Popup */
+
+* {
+    box-sizing: border-box;
+}
+
+.sh-shooraai-popup-recommendations .slick-arrow.slick-disabled {
+    opacity: 0.3;
+}
+
+.sh-shooraai-PopupMain {
+    background-color: rgb(0 0 0 / 50%);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 100000;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.sh-shooraai-recoPopup {
+    background: #fff;
+    max-width: 800px;
+    min-height: 320px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.sh-shooraai-recoPopupBody {
+    padding: 30px 50px;
+}
+
+.sh-shooraai-recoPopupBody::-webkit-scrollbar {
+    width: 7px;
+}
+
+.sh-shooraai-recoPopupBody::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.sh-shooraai-recoPopupBody::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 6px;
+}
+
+
+/* Upsellify Popup Header css*/
+
+.sh-shooraai-recoPopupHeader {
+    padding: 20px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sh-shooraai-recoPopupClose {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.sh-shooraai-recoPopupHeader h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    line-height: normal;
+    letter-spacing: 0;
+    display: block;
+    font-weight: normal;
+}
+
+
+/* Upsellify Popup Header css*/
+
+.sh-shooraai-recommendations-page-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+.sh-shooraai-recommendations-price {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.sh-shooraai-popup-recommendations .text-center {
+    text-align: center;
+}
+
+.sh-shooraai-popup-recommendations .text-left {
+    text-align: left;
+}
+
+.sh-shooraai-popup-recommendations .text-right {
+    text-align: right;
+}
+
+.sh-shooraai-popup .slick-slide {
+    padding: 0 20px;
+    width: 25% !important;
+}
+
+.sh-shooraai-popup-productTitle {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+    text-align: left;
+}
+
+.sh-shooraai-popup-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 10px 0;
+}
+
+.sh-shooraai-popup-price-item.originalPrice:empty {
+    display: none;
+}
+
+.sh-shooraai-popup-price .sh-shooraai-popup-price-item {
+    color: #000;
+}
+
+.sh-shooraai-popup-price .sh-shooraai-popup-price-item.originalPrice {
+    text-decoration: line-through;
+    color: color: rgba(var(--color-foreground), .75);
+}
+
+.sh-shooraai-popup-addToCartOuter {
+    width: 100%;
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.sh-shooraai-popup-atcDropdown {
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: left;
+    white-space: normal;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: unset;
+    letter-spacing: 0;
+    transition: none;
+    padding: 0 50px 0 10px;
+    border: 1px solid #000;
+    background-color: transparent;
+    min-height: 35px;
+    max-height: 50px;
+    max-width: 100%;
+    background-image: none;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    box-shadow: none !important;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sh-shooraai-popup-atcCaret {
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: inline-block !important;
+    margin: 0;
+    width: auto!important;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    transition: none;
+    padding: 13px 20px;
+    color: #000;
+    border: 1px solid #000!important;
+    background-color: transparent;
+    top: 0!important;
+    min-height: 50px;
+    max-height: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.sh-shooraai-popup-atcCaret::after {
+    content: "";
+    display: inline-block;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid #000;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+.sh-shooraai-popup-recommendations .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.sh-shooraai-popup-recommendations .slick-next:before,
+.sh-shooraai-popup-recommendations .slick-prev:before {
+    opacity: 1;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 3px solid #000;
+    border-top: 0;
+    position: absolute;
+    border-left: 0;
+    transform: rotate(-45deg);
+    border-radius: 3px;
+}
+
+.sh-shooraai-popup-recommendations .slick-prev:before {
+    transform: rotate(135deg);
+}
+
+.sh-shooraai-popup-recommendations .slick-next {
+    right: -10px;
+}
+
+.sh-shooraai-popup-recommendations .slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.sh-shooraai-popup-added_text {
+    display: none;
+}
+
+.sh-shooraai-popup-added_text_wrap,
+.sh-shooraai-popup-oos_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+
+.sh-shooraai-popup-added_text img {
+    width: 15px;
+    height: 15px;
+    margin: 0 8px 0 0;
+}
+
+.sh-shooraai-popup-added_text p {
+    margin: 0;
+}
+
+.sh-shooraai-popup-productTitle .upsell-product-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.sh-shooraai-popup-button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #000;
+    cursor: pointer;
+}
+
+.sh-shooraai-popup-recommendations .slick-dots li button:before {
+    font-size: 20px;
+}
+
+.sh-shooraai-recommendproducts-slider .slick-track {
+    width: 100% !important;
+}
+
+.sh-shooraai-popup-title {
+    padding: 0 20px;
+    margin: 40px 0 0 0;
+}
+
+.sh-shooraai-popup-productVendor {
+    margin: 0;
+}
+
+.sh-shooraai-popup-productTitle a,
+.sh-shooraai-popup-productVendor a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.sh-shooraai-recommendproducts-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sh-shooraai-recommendproducts-grid .sh-shooraai-recommendations-productItem {
+    padding: 20px;
+}
+
+.sh-shooraai-widget-grid-6 .sh-shooraai-popup-productItem {
+    width: 16.66%;
+}
+
+.sh-shooraai-widget-grid-5 .sh-shooraai-popup-productItem {
+    width: 20%;
+}
+
+.sh-shooraai-widget-grid-4 .sh-shooraai-popup-productItem {
+    width: 25%;
+}
+
+.sh-shooraai-widget-grid-3 .sh-shooraai-popup-productItem {
+    width: 33.33%;
+}
+
+.sh-shooraai-widget-grid-2 .sh-shooraai-popup-productItem {
+    width: 50%;
+}
+
+.sh-shooraai-widget-grid-1 .sh-shooraai-popup-productItem {
+    width: 100%;
+}
+
+.sh-shooraai-image-mainsection {
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.sh-shooraai-image-mainsection .sh-shooraai-image-main,
+.sh-shooraai-image-mainsection .sh-shooraai-image-hover {
+    transition: 0.4s;
+    padding-bottom: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    display: block;
+}
+
+.sh-shooraai-image-mainsection .sh-shooraai-image-main {
+    opacity: 1;
+}
+
+.sh-shooraai-image-mainsection .sh-shooraai-image-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sh-shooraai-image-mainsection:hover .sh-shooraai-image-main {
+    opacity: 0;
+}
+
+.sh-shooraai-image-mainsection:hover .sh-shooraai-image-hover {
+    opacity: 1;
+}
+
+.sh-shooraai-widget-grid-6 .sh-shooraai-popup-atcDropdown {
+    min-height: 40px;
+}
+
+.sh-shooraai-widget-grid-6 .sh-shooraai-popup-atcCaret {
+    padding: 13px 15px;
+    min-height: 40px;
+    height: 40px;
+}
+
+.sh-shooraai-popup-addToCartOuter .sh-shooraai-popup-select-icon {
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 20px;
+}
+
+.sh-shooraai-popup-addToCartOuter .sh-shooraai-popup-select-icon:after {
+    position: absolute;
+    content: "";
+    border: 2px solid #000;
+    background: none;
+    height: 8px;
+    width: 8px;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.sh-shooraai-popup-position-full_center .sh-shooraai-recoPopup {
+    max-width: 75%;
+}
+
+.sh-shooraai-PopupMain.sh-shooraai-popup-position-left_bottom .sh-shooraai-recoPopup {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    max-width: 600px;
+}
+
+.sh-shooraai-PopupMain.sh-shooraai-popup-position-right_bottom .sh-shooraai-recoPopup {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    max-width: 600px;
+}
+
+.sh-shooraai-PopupMain.sh-shooraai-popup-position-left_bottom .sh-shooraai-recoPopupBody,
+.sh-shooraai-PopupMain.sh-shooraai-popup-position-right_bottom .sh-shooraai-recoPopupBody,
+.sh-shooraai-PopupMain.sh-shooraai-popup-position-small_center .sh-shooraai-recoPopupBody {
+    padding: 30px 30px;
+}
+
+.sh-shooraai-PopupMain.sh-shooraai-popup-position-small_center .sh-shooraai-recoPopup {
+    max-width: 600px;
+}
+
+
+/* slider */
+
+.sh-shooraai-popup-recommendations .slick-slide {
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sh-shooraai-recoPopupBody {
+        padding: 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sh-shooraai-OtherProducts ul {
+        padding: 0;
+    }
+    .sh-shooraai-Item {
+        margin: 0;
+        border: none;
+        padding: 1rem 0;
+    }
+    .sh-shooraai-MainProduct {
+        padding: 1rem 1rem;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductDesc {
+        width: 100%;
+        padding: 0;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductAction {
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+    .sh-shooraai-ItemInner {
+        padding: 0;
+        display: block;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductDesc .sh-shooraai-imgBox {
+        padding: 0 1rem;
+    }
+    .sh-shooraai-Item .sh-shooraai-atcButton {
+        width: 100%;
+        margin: 8px 0 0 0;
+    }
+    .sh-shooraai-Item .sh-shooraai-infoBox {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 1rem;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductDesc .sh-shooraai-imgBox:before {
+        display: none;
+    }
+    .sh-shooraai-sh-shooraai-PopupMain {
+        padding: 0;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductAction .sh-shooraai-quantityButtonWrap {
+        display: none;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductAction .sh-shooraai-quantitySelector input {
+        padding: 0.9rem 0.4rem;
+    }
+    .sh-shooraai-Item .sh-shooraai-prductAction .sh-shooraai-atcButton button {
+        padding: 0.4rem 1.3rem 0.4rem 1rem;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .sh-shooraai-Item .sh-shooraai-variantSelectorWrap select {
+        height: 32px;
+        font-size: 12px;
+    }
+    .sh-shooraai-Item .sh-shooraai-variantSelectorWrap:after {
+        top: 12px;
+    }
+    .sh-shooraai-PopupFooter button {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .sh-shooraai-now-no-thanks {
+        font-size: 12px;
+        margin: 0 15px 0 0;
+        left: 10px;
+    }
+    .sh-shooraai-PopupBody {
+        margin: 0;
+    }
+    .sh-shooraai-PopupFooter {
+        padding: 1rem 1.1rem;
+    }
+    .sh-shooraai-PopupHeader h2 {
+        word-break: break-word;
+    }
+    .sh-shooraai-Item .sh-shooraai-infoBox .sh-shooraai-productName .upsell-product-link,
+    .sh-shooraai-MainProduct .sh-shooraai-productName .upsell-product-link {
+        margin: 0 0 5px 0;
+        display: block;
+    }
+    .sh-shooraai-PopupBody::-webkit-scrollbar {
+        width: 7px !important;
+    }
+    .sh-shooraai-recoPopup {
+        width: 100% !important;
+        max-width: 95% !important;
+    }
+    .sh-shooraai-popup-recommendations .slick-next:before,
+    .sh-shooraai-popup-recommendations .slick-prev:before {
+        height: 15px;
+        width: 15px;
+    }
+    .sh-shooraai-PopupMain.sh-shooraai-popup-position-left_bottom .sh-shooraai-recoPopup,
+    .sh-shooraai-PopupMain.sh-shooraai-popup-position-right_bottom .sh-shooraai-recoPopup {
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 0%);
+        right: unset;
+    }
+}
+
+@keyframes toast-fadeinup {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes toast-fadeoutdown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+}
+
+@keyframes toast-fadeinleft {
+    from {
+        opacity: 0;
+        transform: translateX(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes toast-fadeoutright {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(25%);
+    }
+}

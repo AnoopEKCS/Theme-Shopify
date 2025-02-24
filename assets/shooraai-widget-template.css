@@ -1,0 +1,510 @@
+.sh-shooraai-recommendations-page-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+.sh-shooraai-recommendations-price {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.sh-shooraai-recommendations .text-center {
+    text-align: center;
+}
+
+.sh-shooraai-recommendations .text-left {
+    text-align: left;
+}
+
+.sh-shooraai-recommendations .text-right {
+    text-align: right;
+}
+
+.sh-shooraai-recommendations .slick-slide {
+    padding: 0 20px 20px;
+}
+
+.sh-shooraai-recommendations-productTitle {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+    text-align: left;
+}
+
+.sh-shooraai-recommendations-price__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sh-shooraai-recommendations-price-item.originalPrice:empty {
+    display: none;
+}
+
+.sh-shooraai-recommendations-price .sh-shooraai-recommendations-price-item {
+    color: #000;
+}
+
+.sh-shooraai-recommendations-price .sh-shooraai-recommendations-price-item.originalPrice {
+    text-decoration: line-through;
+    color: color: rgba(var(--color-foreground), .75);
+}
+
+.sh-shooraai-recommendations-addToCartOuter {
+    width: 100%;
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.sh-shooraai-recommendations-atcDropdown {
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: none;
+    padding: 0 50px 0 10px;
+    border: 1px solid #000;
+    background-color: transparent;
+    min-height: 50px;
+    max-height: 50px;
+    max-width: 100%;
+    background-image: none;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    box-shadow: none !important;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sh-shooraai-recommendations-atcCaret {
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: inline-block !important;
+    margin: 0;
+    width: auto!important;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    transition: none;
+    padding: 13px 20px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: transparent;
+    top: 0;
+    min-height: 50px;
+    max-height: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.sh-shooraai-recommendations-atcCaret::after {
+    content: "";
+    display: inline-block;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid #000;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+.sh-shooraai-recommendations .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.sh-shooraai-recommendations .slick-next:before,
+.sh-shooraai-recommendations .slick-prev:before {
+    opacity: 1;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 3px solid #000;
+    border-top: 0;
+    position: absolute;
+    border-left: 0;
+    transform: rotate(-45deg);
+    border-radius: 3px;
+}
+
+.sh-shooraai-recommendations .slick-prev:before {
+    transform: rotate(135deg);
+}
+
+.sh-shooraai-recommendations .slick-next {
+    right: -10px;
+}
+
+.sh-shooraai-recommendations .slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.sh-shooraai-recommendations-added_text {
+    display: none;
+}
+
+.sh-shooraai-recommendations-added_text_wrap,
+.sh-shooraai-recommendations-oos_text {
+    font-size: 11px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+
+.sh-shooraai-recommendations-added_text_wrap a,
+.sh-shooraai-recommendations-oos_text a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sh-shooraai-recommendations-added_text img {
+    width: 15px;
+    height: 15px;
+    margin: 0 8px 0 0;
+}
+
+.sh-shooraai-recommendations-added_text p {
+    margin: 0;
+}
+
+.sh-shooraai-recommendations-productTitle .upsell-product-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.sh-shooraai-recommendations-atcButton {
+    padding: 13px 20px;
+    border: 1px solid #000;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #000;
+    cursor: pointer;
+
+    width:100%;
+}
+
+.sh-shooraai-recommendations .slick-dots li button:before {
+    font-size: 20px;
+}
+
+.sh-shooraai-recommendations-title {
+    padding: 0 20px;
+    margin: 40px 0 0 0;
+}
+
+.sh-shooraai-recommendations-productVendor {
+    margin: 0;
+}
+
+.sh-shooraai-recommendations-productTitle a,
+.sh-shooraai-recommendations-productVendor a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.sh-shooraai-recommendproducts-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sh-shooraai-recommendproducts-grid .sh-shooraai-recommendations-productItem {
+    padding: 20px;
+}
+
+.sh-shooraai-widget-grid-6 .sh-shooraai-recommendations-productItem {
+    width: 16.66%;
+}
+
+.sh-shooraai-widget-grid-5 .sh-shooraai-recommendations-productItem {
+    width: 20%;
+}
+
+.sh-shooraai-widget-grid-4 .sh-shooraai-recommendations-productItem {
+    width: 25%;
+}
+
+.sh-shooraai-widget-grid-3 .sh-shooraai-recommendations-productItem {
+    width: 33.33%;
+}
+
+.sh-shooraai-widget-grid-2 .sh-shooraai-recommendations-productItem {
+    width: 50%;
+}
+
+.sh-shooraai-widget-grid-1 .sh-shooraai-recommendations-productItem {
+    width: 100%;
+}
+
+.sh-shooraai-image-mainsection {
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.sh-shooraai-image-mainsection .sh-shooraai-image-main,
+.sh-shooraai-image-mainsection .sh-shooraai-image-hover {
+    transition: 0.4s;
+    padding-bottom: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    display: block;
+}
+
+.sh-shooraai-image-mainsection .sh-shooraai-image-main {
+    opacity: 1;
+}
+
+.sh-shooraai-image-mainsection .sh-shooraai-image-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sh-shooraai-image-mainsection:hover .sh-shooraai-image-main {
+    opacity: 0;
+}
+
+.sh-shooraai-image-mainsection:hover .sh-shooraai-image-hover {
+    opacity: 1;
+}
+
+.sh-shooraai-widget-grid-6 .sh-shooraai-recommendations-atcDropdown {
+    min-height: 40px;
+}
+
+.sh-shooraai-widget-grid-6 .sh-shooraai-recommendations-atcCaret {
+    padding: 13px 15px;
+    min-height: 40px;
+    height: 40px;
+}
+
+.sh-shooraai-recommendations-addToCartOuter .sh-shooraai-recommendations-select-icon {
+    position: absolute;
+    display: block;
+    top: 13px;
+    right: 22px;
+}
+
+.sh-shooraai-recommendations-addToCartOuter .sh-shooraai-recommendations-select-icon:after {
+    position: absolute;
+    content: "";
+    border: 2px solid #000;
+    background: none;
+    height: 10px;
+    width: 10px;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+
+/*  Layout 2  */
+
+.sh-shooraai-recommendations-layout2 .sh-shooraai-recommendations-atcDropdown {
+    min-height: 40px;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    letter-spacing: 0;
+    text-transform: unset;
+    font-weight: 400;
+    padding: 0 35px 0 12px;
+}
+
+.sh-shooraai-recommendations-layout2 .sh-shooraai-recommendations-button {
+    background: #000;
+    height: 40px;
+    border: 1px solid #000;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* Layout 3 */
+
+.sh-shooraai-recommendations-layout3 .sh-shooraai-dropdown-atcDropdown {
+    position: absolute;
+    bottom: 10px;
+    background: #fff;
+    max-height: 90%;
+    left: 10px;
+    right: 10px;
+    overflow: auto;
+    border: 1px solid #000;
+}
+
+.sh-shooraai-recommendations-layout3 .sh-shooraai-dropdown-heading {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 10px;
+    color: #000;
+    font-weight: 500;
+}
+
+.sh-shooraai-recommendations-layout3 .sh-shooraai-dropdown-layout3-close:after,
+.sh-shooraai-recommendations-layout3 .sh-shooraai-dropdown-layout3-close:before {
+    position: absolute;
+    content: "";
+    background: #000;
+    height: 10px;
+    width: 2px;
+    right: 12px;
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.sh-shooraai-recommendations-layout3 .sh-shooraai-dropdown-layout3-close:before {
+    transform: rotate(135deg);
+}
+
+.sh-shooraai-recommendations-layout3 .shooraai-recommendations-dropdown-ul li {
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    color: #000;
+    transition: 0.4s;
+}
+
+.sh-shooraai-recommendations-layout3 .shooraai-recommendations-dropdown-ul li:hover {
+    background: #eee;
+    transition: 0.4s;
+}
+
+.sh-shooraai-recommendations-layout3 button.sh-shooraai-recommendations-button-layout3 {
+    background: #000;
+    height: 40px;
+    border: 1px solid #000;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.sh-shooraai-dropdown-layout3-close {
+    font-size: 0;
+}
+
+.shooraai-recommendations-dropdown-ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Slider */
+
+.sh-shooraai-recommendationstype-slider .sh-shooraai-recommendations-title {
+    margin: 30px 0;
+}
+
+.sh-shooraai-recommendations .slick-arrow.slick-disabled {
+    opacity: 0.3;
+    cursor: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .sh-shooraai-recommendations .slick-next,
+    .sh-shooraai-recommendations .slick-prev {
+        display: none !important;
+    }
+    .sh-shooraai-recommendations .slick-slide {
+        padding: 0 5px;
+    }
+    .sh-shooraai-recommendations-atcButton {
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 5px 20px;
+        min-height: 40px;
+    }
+    .sh-shooraai-recommendations-productItem img {
+        max-height: 200px;
+    }
+    .sh-shooraai-recommendations-atcCaret {
+        padding: 5px 15px;
+        min-height: 40px;
+        max-height: 50px;
+        height: 40px;
+    }
+    .sh-shooraai-recommendations-price__container {
+        font-size: 12px;
+    }
+    .sh-shooraai-recommendations-added_text {
+        font-size: 9px;
+    }
+    .sh-shooraai-recommendproducts-grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .sh-shooraai-recommendproducts-grid .sh-shooraai-recommendations-productItem {
+        padding: 10px;
+        width: 50%;
+    }
+    .sh-shooraai-widget-grid-4 .sh-shooraai-recommendations-productItem {
+        width: 50%;
+    }
+    .sh-shooraai-recommendations-atcDropdown {
+        font-size: 11px !important;
+        letter-spacing: 0;
+        padding: 0 40px 0 12px;
+        min-height: 40px;
+    }
+}

@@ -1,0 +1,198 @@
+{%- if type == 'select' -%}
+  {%- assign filter_count = 0 -%}
+  {%- if current_tags.size > 0 -%}
+  {%- assign filter_count = current_tags.size -%}
+  {%- endif -%}
+  <div class="productgrid--utils utils-filter">
+    <button
+            class="utils-filter-button"
+            type="button"
+            aria-label="{{ 'product_grid.filters.title_count' | t: count: filter_count }}"
+            data-productgrid-trigger-filters
+            >
+      <span class="utils-filter-icon">
+        {%- include 'icon-filters' -%}
+      </span>
+      <span class="utils-filter-text">
+        {{- 'product_grid.filters.title_count' | t: count: filter_count -}}
+      </span>
+    </button>
+  </div>
+  {% endif %}
+
+  {%- if type == 'modal' -%}
+	{%- capture tag_icon -%}
+      <span class="filter-icon--checkbox">
+        {%- include 'icon-checkbox' -%}
+      </span>
+	{%- endcapture -%}
+
+  <div class="utils-filter--modal" aria-hidden="true" data-filter-group style="display:none">
+    <span class="utils-filter--modal-title">
+      {{ 'product_grid.filters.title_count' | t: count: 0 }}
+    </span>
+	
+ <ul class="productgrid--sidebar-item filter-group" data-filter-group>
+  {% comment %}
+    Strip the prepended categories if they happen to exist.
+  {% endcomment %}
+
+  {%- assign custom_ordered_tags = section.settings.custom_ordered_tags | split: ',' -%}
+  {%- assign custom_tags = blank -%}
+
+  {%- for custom_ordered_tag in custom_ordered_tags -%}
+    {%- assign custom_tag = custom_ordered_tag | strip -%}
+
+    {%- unless collection.all_tags contains custom_tag -%}
+      {%- continue -%}
+    {%- endunless -%}
+
+    {%-
+      assign custom_tags = custom_tags
+      | append: '|'
+      | append: custom_tag
+    -%}
+  {%- endfor -%}
+
+  {% assign sorted_tags = custom_tags | remove_first: '|' | split:  '|' | concat: collection.all_tags | uniq %}
+
+  {% for tag in sorted_tags %}
+    {% assign is_advanced_tag = false %}
+    {% assign cat = tag | split: '_' | first %}
+
+    {%- if cat == 'searchfilter' -%}
+      {%- continue -%}
+    {%- endif -%}
+
+    {% unless cat == tag %}
+      {% if cat_array contains cat %}
+        {% assign is_advanced_tag = true %}
+      {% endif %}
+    {% endunless %}
+
+    {%- capture tag_text -%}
+      {{- tag_icon -}}
+
+      <span class="filter-text">
+        {%- if is_advanced_tag -%}
+          {{ tag | remove_first: cat | remove_first: '_' }}
+        {%- else -%}
+          {{ tag }}
+        {%- endif -%}
+      </span>
+    {%- endcapture -%}
+
+    {% assign filter_class = 'filter-item' %}
+    {%- if current_tags contains tag -%}
+      {% assign filter_class = filter_class | append: ' filter-item--active' %}
+   			
+    {%- else -%}
+      {% assign filter_class = filter_class | append: ' filter-item--inactive' %}
+    {%- endif -%}
+
+    {%- if forloop.index > tag_limit -%}
+      {% assign filter_class = filter_class | append: ' filter-item--hidden' %}
+    {%- endif -%}
+
+    <li
+      class="{{ filter_class }}"
+      {% if forloop.index > tag_limit %}data-hidden-default{% endif %}
+      {% if current_tags contains tag %}aria-current="true"{% endif %}
+    >
+      {% if current_tags contains tag %}
+        {{ tag_text | link_to_remove_tag: tag | replace: '" title="', '&grid_list" title=""' }}
+      {% else %}
+        {{ tag_text | link_to_tag: tag | replace: '" title="', '&grid_list" title=""' }}
+      {% endif %}
+    </li>
+  {% endfor %}
+
+  {% if collection.all_tags.size > tag_limit %}
+    <li class="filter-item filter-item--toggle">
+      <a class="filter-text--link" href="#" data-filter-toggle="false">
+        {{ 'general.general.see_more' | t }}
+      </a>
+    </li>
+  {% endif %}
+ </ul>
+     <div id="close-filter-modal">Close</div>
+  </div>
+
+  <style>
+      .utils-filter--modal {
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 7px;
+        width: 50%;
+        max-width: 50em;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10000;
+        padding: 1em;
+  	}
+    .utils-filter--modal-item {
+   	 	list-style: none;
+      	padding-top: .7em;
+		font-size: 20px;
+	}
+    
+    .utils-filter--modal-button {
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #000;
+  	}
+    
+    .utils-filter--modal-button:hover {
+      color: #fff;
+      background-color:  #d71c2e;
+      border: 1px solid #000;
+  	}
+    
+    .utils-filter--modal-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 1rem;
+    color: #000;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+    
+    #close-filter-modal {
+      height: 2em;
+      width: 5em;
+      background-color: #d71c2e;
+      margin: 1em auto;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      line-height: 2em;
+
+    }
+
+  </style>
+
+  <script>
+      var filter_trigger = document.querySelector(".utils-filter-button");
+      var filtered_item = document.querySelector(".filter-item");
+      var close_modal = document.querySelector("#close-filter-modal");
+      var remove_filter = document.querySelector(".filter-icon--remove");
+      //var modal = document.querySelector(".utils-sortby--modal");
+    
+      filter_trigger.addEventListener("click", function() {	
+        console.log("sort button clicked");
+      //  sortby_trigger.classList.add("active");
+        $(".utils-filter--modal").css("display", "block");
+      });
+    
+    close_modal.addEventListener("click", function() {
+     $(".utils-filter--modal").css("display", "none");
+    });
+    
+    
+    
+  </script>
+{%- endif -%}

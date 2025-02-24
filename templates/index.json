@@ -1,0 +1,248 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "dynamic_promo_mosaic": {
+      "type": "dynamic-promo-mosaic",
+      "blocks": {
+        "promotion-3": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Large_Tile_Evergreen_Pajamas.jpg",
+            "title": "COZY UP",
+            "title_line2": "WITH CANE'S",
+            "title_line3": "",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "shopify://collections/pants",
+            "button_text": "Shop Now",
+            "button_style": "secondary",
+            "show_overlay": false,
+            "background": "#000000",
+            "opacity": 3
+          }
+        },
+        "8a4e4b5c-0d49-407d-b95e-392bfffd49f7": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Image.jpg",
+            "title": "GIVE THE GIFT",
+            "title_line2": "OF ONE LOVE",
+            "title_line3": "",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "shopify://pages/give-the-gift-of-one-love",
+            "button_text": "Shop Gift Cards",
+            "button_style": "secondary",
+            "show_overlay": false,
+            "background": "#000000",
+            "opacity": 1
+          }
+        },
+        "promotion-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/SM_3_Brumate.png",
+            "title": "RAISING CANE's x BRUMATE",
+            "title_line2": "",
+            "title_line3": "",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "shopify://collections/raising-canes-x-brumate",
+            "button_text": "Shop Now",
+            "button_style": "secondary",
+            "show_overlay": false,
+            "background": "#000000",
+            "opacity": 10
+          }
+        },
+        "promotion-4": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Big_Tile_Bomber_Jacket_1.png",
+            "title": "COLD WEATHER",
+            "title_line2": "WEAR",
+            "title_line3": "",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "https://dev-plus-rc.myshopify.com/collections/apparel/category_outerwear",
+            "button_text": "Shop Now",
+            "button_style": "secondary",
+            "show_overlay": false,
+            "background": "#000000",
+            "opacity": 10
+          }
+        },
+        "promotion-2": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/33822-Cane_s-Gear_Retail-Tile-Final-Few.jpg",
+            "title": "LAST CHANCE",
+            "title_line2": "ON FINAL FEW",
+            "title_line3": "",
+            "text": "",
+            "color": "#ffffff",
+            "block_link": "shopify://collections/final-few",
+            "button_text": "Shop Now",
+            "button_style": "secondary",
+            "show_overlay": false,
+            "background": "#000000",
+            "opacity": 1
+          }
+        }
+      },
+      "block_order": [
+        "promotion-3",
+        "8a4e4b5c-0d49-407d-b95e-392bfffd49f7",
+        "promotion-1",
+        "promotion-4",
+        "promotion-2"
+      ],
+      "settings": {
+        "title": "",
+        "section_height": "small",
+        "text_alignment": "top-left",
+        "maintain_aspect_ratio": true,
+        "compress_blocks": false
+      }
+    },
+    "dynamic_featured_product": {
+      "type": "dynamic-featured-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "4694f5b0-f3a5-41f3-a367-f742995799c2": {
+          "type": "form",
+          "settings": {
+            "enable_local_pickup": false
+          }
+        },
+        "view-product-link": {
+          "type": "view-product-link",
+          "settings": {
+            "text": "View full details"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "4694f5b0-f3a5-41f3-a367-f742995799c2",
+        "view-product-link"
+      ],
+      "settings": {
+        "product": "lightweight-camo-hooded-sweatshirt",
+        "gallery_aspect_ratio": "natural",
+        "gallery_image_crop": false,
+        "gallery_thumbnail_position": "left",
+        "gallery_video_autoplay": false,
+        "gallery_video_looping": false,
+        "gallery_hover_zoom": "replace"
+      }
+    },
+    "dynamic_collection_list": {
+      "type": "dynamic-collection-list",
+      "blocks": {
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "apparel",
+            "image": "shopify://shop_images/Apparel-323x323px.png",
+            "title": ""
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "headwear",
+            "image": "shopify://shop_images/Apparel_Category_Tile.png",
+            "title": ""
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "image": "shopify://shop_images/Accessories-323x323px.png",
+            "title": ""
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "collabs",
+            "image": "shopify://shop_images/Accessoies_Category_Tile.png",
+            "title": ""
+          }
+        },
+        "collection-5": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "collection-6": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-4",
+        "collection-2",
+        "collection-1",
+        "collection-3",
+        "collection-5",
+        "collection-6"
+      ],
+      "settings": {
+        "title": "",
+        "thumbnail_columns_desktop": 4,
+        "thumbnail_columns_mobile": 2,
+        "image-crop": "original",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_button_style": "secondary"
+      }
+    },
+    "dynamic_video_6ddWzm": {
+      "type": "dynamic-video",
+      "disabled": true,
+      "settings": {
+        "title": "Video",
+        "url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "show_caption": false,
+        "caption": "<p>A short description of the video.</p>",
+        "autoplay": false,
+        "aspect_ratio": "21-9",
+        "show_overlay": false,
+        "background": "#000000",
+        "opacity": 50
+      }
+    }
+  },
+  "order": [
+    "dynamic_promo_mosaic",
+    "dynamic_featured_product",
+    "dynamic_collection_list",
+    "dynamic_video_6ddWzm"
+  ]
+}

@@ -1,0 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "static-subcollections-featured-collection",
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "show_subcollection_menu": true,
+        "layout": "slideshow",
+        "product_count": 4,
+        "cta_label": "Shop all",
+        "shop_all_card_enable": true,
+        "shop_all_card_text_color": "#ffffff",
+        "shop_all_card_background_color": "#047084"
+      }
+    },
+    "dynamic_collection_list_3xUJTY": {
+      "type": "dynamic-collection-list",
+      "blocks": {
+        "collection_tedegW": {
+          "type": "collection",
+          "settings": {
+            "collection": "raising-canes-holiday-2024",
+            "image": "shopify://shop_images/Holiday_Collection.png",
+            "title": ""
+          }
+        },
+        "collection_YU7Mhm": {
+          "type": "collection",
+          "settings": {
+            "collection": "loteria-collection",
+            "image": "shopify://shop_images/Loteria_Collection.png",
+            "title": ""
+          }
+        },
+        "collection_FxAWGq": {
+          "type": "collection",
+          "settings": {
+            "collection": "western-ballad-collection",
+            "image": "shopify://shop_images/Western_Collection.png",
+            "title": ""
+          }
+        },
+        "collection_XDyBtn": {
+          "type": "collection",
+          "settings": {
+            "collection": "canes-varsity-collection",
+            "image": "shopify://shop_images/Varsity_Collection.png",
+            "title": ""
+          }
+        },
+        "collection_TDLBqT": {
+          "type": "collection",
+          "settings": {
+            "collection": "cane3",
+            "image": "shopify://shop_images/Cane_3_Collection.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_tedegW",
+        "collection_YU7Mhm",
+        "collection_FxAWGq",
+        "collection_XDyBtn",
+        "collection_TDLBqT"
+      ],
+      "settings": {
+        "title": "",
+        "thumbnail_columns_desktop": 3,
+        "thumbnail_columns_mobile": 2,
+        "image-crop": "original",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dynamic_collection_list_3xUJTY"
+  ]
+}

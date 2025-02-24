@@ -1,0 +1,74 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "static-subcollections-grid",
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_description": true,
+        "show_collection_image": true,
+        "show_product_count": false,
+        "thumbnail_columns_desktop": 5,
+        "thumbnail_columns_mobile": 2,
+        "thumbnail_image": "product-image",
+        "image_crop": "original"
+      }
+    },
+    "dynamic_collection_list_JW3BzR": {
+      "type": "dynamic-collection-list",
+      "blocks": {
+        "collection_AEtPeJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "raising-canes-x-sportiqe",
+            "image": "shopify://shop_images/Collab-Sportiqe.png",
+            "title": ""
+          }
+        },
+        "collection_yLBy3r": {
+          "type": "collection",
+          "settings": {
+            "collection": "raising-canes-x-brumate",
+            "image": "shopify://shop_images/Collab-Brumate.png",
+            "title": ""
+          }
+        },
+        "collection_Uc4hh8": {
+          "type": "collection",
+          "settings": {
+            "collection": "raising-canes-x-teleties",
+            "image": "shopify://shop_images/Collab-Teleties.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_AEtPeJ",
+        "collection_yLBy3r",
+        "collection_Uc4hh8"
+      ],
+      "settings": {
+        "title": "",
+        "thumbnail_columns_desktop": 3,
+        "thumbnail_columns_mobile": 2,
+        "image-crop": "original",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dynamic_collection_list_JW3BzR"
+  ]
+}

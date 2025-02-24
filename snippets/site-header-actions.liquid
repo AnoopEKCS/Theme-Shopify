@@ -1,0 +1,75 @@
+<ul class="site-header-actions" data-header-actions>
+  {% if shop.customer_accounts_enabled %}
+    {% unless customer %}
+      <li class="site-header-actions site-header-actions__account-link">
+        <!-- <a
+        class="site-header_account-link-anchor"
+        href="{{ routes.account_login_url }}"
+        >
+        <span class="site-header__account-icon">
+        {% 
+        render 'icon-library', 
+        id: 'icon-account', 
+        %}
+        </span>
+
+        <span class="site-header_account-link-text">
+        {{ 'header.account.login' | t }}
+        </span>
+        </a> -->
+        <a target="_self" href="https://login.raisingcanes.com/as/authorize?response_type=code&client_id=d8883b9e-3ffa-4182-ac04-4fc6d3399ea2&redirect_uri=https://rcretailredirect.dsimarketnow.com&scope=openId%20profile">
+        <span class="site-header_account-link-text">Login</span>
+        </a>
+        
+      </li>
+      <li class="site-header-actions site-header-actions__account-link">
+           
+             <a target="_self" href="https://order.raisingcanes.com/account/signup?redirect=https://rcretailredirect.dsimarketnow.com">
+                Sign Up
+              </a>
+          </li>
+    {% else %}
+      <li class="site-header-actions site-header-actions__account-link">
+        <!-- <span class="site-header__account-icon">
+        {% render 'icon-library', id: 'icon-account' %}
+        </span> -->
+        <span class="site-header__account-links">
+         
+          <a
+            class="site-header__account-link--logout-md"
+            href="{{ routes.account_logout_url }}"
+            data-no-instant>
+            {{ 'header.account.logout' | t }}
+          </a>
+        </span>
+      </li>
+    {% endunless %}
+  {% endif %}
+  <li class="site-header-actions">
+    <a href="/pages/support-faq">
+      Support/FAQ
+    </a>
+  </li>
+  <li class="site-header-actions">
+    <a href="/pages/send-us-a-message">
+      <span>Contact Us</span>
+      <span style="padding-left: 1.5em">1-844-646-1829</span>
+    </a>
+  </li>
+</ul>
+
+<script>
+  // Code to open external links in new tab vs same tab BJ 092320
+  var links = document.links;
+  for (let i = 0, linksLength = links.length; i < linksLength; i++) {
+
+    if (links[i].href === "https://order.raisingcanes.com/account/signin?redirect=https://rcretailredirect.dsimarketnow.com" || (links[i].href === "https://order.raisingcanes.com/account/signup?redirect=https://rcretailredirect.dsimarketnow.com") || (links[i].href === "https://login.raisingcanes.com/as/authorize?response_type=code&client_id=d8883b9e-3ffa-4182-ac04-4fc6d3399ea2&redirect_uri=https://rcretailredirect.dsimarketnow.com&scope=openId%20profile")) {
+      links[i].target = '_self';
+    } else if (links[i].hostname !== window.location.hostname) {
+      links[i].target = '_blank';
+      links[i].rel = 'noreferrer noopener';
+    } else {
+      links[i].target = '_self';
+    }
+  }
+</script>

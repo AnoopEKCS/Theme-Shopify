@@ -1,0 +1,147 @@
+
+        
+    <div class="product-giftcard-disclaimer" style="padding-top: .3em;">
+        <div class="giftcard-modal-trigger">
+            Our gift cards are redeemable at most Raising Cane’s restaurants throughout the country. 
+            Several of our franchise restaurants located in airport or university dining facilities are unable 
+            to process the gift cards. <span style="color:#d71c2e">Click here </span> to see a list of locations unable to redeem gift cards.
+  		</div>
+      </div>
+        <div class="giftcard-modal hide">
+            <span class="closex" style="position:fixed; top:1em; right:2em;"><b>X</b></span>
+            <h1>Location Unable to Redeem Gift Cards</h1>
+            <div class="giftcard-divider"></div>
+            <div class="giftcard-data"> 
+              <ul class="giftcard-states">
+                <li><b>Virginia Commonwealth University</b></li>
+                <li>805 W Grace St., Richmond, VA</li>
+                <br>
+                <li><b>Alabama University</b></li>
+                <li>210 Mc Corvey Dr, Tuscaloosa, AL</li>
+                <br>
+                <li><b>University of Tennessee</b></li>
+                <li>1659 Cumberland Ave., Knoxville, TN</li>
+                <br>
+                <li><b>Ole Miss</b></li>
+                <li>900 Hill Drive, Oxford, MS</li>
+                <br>
+                <li><b>Clemson</b></li>
+                <li>511 Fort Hill Street, Clemson, SC</li>
+                <br>
+                <li><b>East Carolina University</b></li>
+                <li>501 E Tenth Street, Greenville, NC</li>
+                </ul>
+            </div> 
+           <div class="OK-btn">Close</div>
+        </div>
+    	<style>
+              .responsive {
+			/*   width: 100%;
+                max-width: 400px; */
+                height: min-content;
+              }
+              
+              .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+              }
+                .giftcard-modal {
+                    background-color: #ffffff;
+                    border: 1px solid #000000;
+                  	border-radius: 7px;
+                    width:50%;
+                    max-width: 50em;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 10000;
+                  	padding: 1em;
+                    overflow: auto;
+                }
+              
+          		
+				.giftcard-modal h1 {
+                    text-align: center;
+                    font-size: 1.3em;
+                    line-height: 1.3em;
+                  	padding-top: 1em;
+                }
+              	
+                .giftcard-states {
+                    padding-left: 0em;
+                }
+
+                .OK-btn {
+                    height: 2em;
+                    width: 5em;
+                    background-color: #d71c2e;
+                    margin: 1em auto;
+                    color: white;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 2em;
+              
+                }
+
+               .giftcard-modal.show {
+                    display: block;
+                }
+              
+              .giftcard-modal.hide {
+                    display: none;
+                }
+          		
+          	  .giftcard-divider {
+                    border-bottom: 1px solid #e7e4e4;
+                }
+        
+          	 .giftcard-states li {
+                 list-style: none;
+                 line-height: 1.5em;
+                 text-align: center;
+               }
+          
+            @media only screen and (max-width: 900px) {
+              .giftcard-modal.show {
+                    height: 70%;
+                    overflow: auto;
+                }
+
+            }
+          	
+            </style>
+    		<script>
+              	var trigger = document.querySelector(".giftcard-modal-trigger");
+                var modal = document.querySelector(".giftcard-modal");
+                var OKbtn = document.querySelector(".OK-btn");
+              	var closex = document.querySelector(".closex");
+              	
+              
+              	trigger.addEventListener("click", function() {	
+                  	console.log("event clicked");
+                  	modal.classList.remove("hide");
+                	modal.classList.add("show");
+                  	var ismodal = true;
+          
+                });
+              
+               OKbtn.addEventListener("click", function() {
+                    modal.classList.remove("show");
+                	modal.classList.add("hide");
+                });
+              
+              closex.addEventListener("click", function() {
+                    modal.classList.remove("show");
+                	modal.classList.add("hide");
+                });
+              
+              var gallery = document.querySelector(".gallery-navigation--scroller");
+              gallery.style.display = "none" ;
+              
+    		</script>
+    
+	  
+    

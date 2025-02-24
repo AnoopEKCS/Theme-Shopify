@@ -1,0 +1,385 @@
+/* FBT */
+
+.shooraai-bundle-main {
+    width: 100%;
+}
+
+.sh-shooraai-recoFbtContainer {
+    max-width: 1170px;
+    padding: 0 0 50px;
+    margin: 0 auto;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtHeading h2 {
+    font-size: 24px;
+    margin: 30px 0;
+    line-height: normal;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.sh-shooraai-recoFbtContainer .text-center {
+    text-align: center;
+}
+
+.sh-shooraai-recoFbtContainer .text-left {
+    text-align: left;
+}
+
+.sh-shooraai-recoFbtContainer .text-right {
+    text-align: right;
+}
+
+
+/* Css for image section */
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtProductBgImage,
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtProductBgImageHover {
+    transition: 0.4s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    padding: 0;
+    max-width: 100%;
+    background: #fff;
+    padding-top: 100%;
+    border: 1px solid #ededed;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtProductBgImageHover {
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtImagePlusWrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+/* fbt half */
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtsection-half .sh-shooraai-fbtImageRow .sh-shooraai-fbtImagePlusWrap {
+    width: 100%;
+}
+
+.sh-shooraai-bundle-list-item_2 .sh-shooraai-fbtsection-half .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+    width: 46%;
+    height: auto;
+}
+
+.sh-shooraai-bundle-list-item_3 .sh-shooraai-fbtsection-half .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+    width: 28%;
+    height: auto;
+}
+
+.sh-shooraai-bundle-list-item_4 .sh-shooraai-fbtsection-half .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+    width: 19%;
+    height: auto;
+}
+
+
+/* fbt half */
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtATCBox {
+    max-width: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtPlusSign {
+    margin: 0;
+    font-size: 22px;
+    padding: 0;
+    color: #000;
+    font-weight: 300;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+    position: relative;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+
+.sh-shooraai-bundle-list-item_4 .sh-shooraai-fbtImageBox {
+    width: 19%;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtEqualSign {
+    font-size: 22px;
+    padding: 0 15px;
+    color: #000;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtAddtocart button {
+    background: transparent;
+    color: #000;
+    padding: 12px 30px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.4s;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtAddtocart button:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtTotalPrice {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: normal;
+    padding: 0;
+    font-weight: 400;
+    font-family: inherit;
+    color: #000;
+}
+.sh-shooraai-fbtTotal-original-price{
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbt-image-mainsection:hover .sh-shooraai-fbtProductBgImage {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbt-image-mainsection:hover .sh-shooraai-fbtProductBgImageHover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.sh-shooraai-bundle-oos_text,
+.sh_shooraai_bundle_atc_messages {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 8px 0 0 0;
+    text-align: center;
+}
+
+
+/* Css for description section */
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow {
+    display: block;
+    margin: 30px 0 0 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 0 4px 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescBox label {
+    position: absolute;
+    border: 1px solid #000;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    border-radius: 2px;
+    background: #000;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescBox input#fbtCheckBox:checked~label:before {
+    position: absolute;
+    content: "";
+    border: 2px solid #fff;
+    height: 9px;
+    width: 5px;
+    border-top: 0;
+    border-left: 0;
+    left: 4px;
+    top: 1px;
+    transform: rotate(37deg);
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescBox input#fbtCheckBox {
+    margin: 0;
+    height: 15px;
+    width: 15px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductTitle a {
+    font-size: 14px;
+    margin: 0;
+    line-height: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductVariantSelector {
+    min-width: 100px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    padding: 0 20px 0 5px;
+    font-size: 12px;
+    margin: 0 15px 0 0;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    background-image: none !important;
+    position: relative;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductVariantSelector:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 1px solid #000;
+    right: 8px;
+    z-index: 1;
+    top: 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductPrice {
+    display: flex;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding: 0 15px 0 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductPrice span.sh-shooraai-product-price {
+    color: #000;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductTitle {
+    margin: 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-product-variant-field:not([disabled]) {
+    cursor: pointer;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtProductDescWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px;
+    gap: 8px;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-product-variant-field {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    min-width: 70px !important;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath fill='%23666' d='M0 0l3.5 4.4C3.7 4.4 7.1 0 7.1 0H0z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 10px center !important;
+    background-color: rgb(255, 255, 255) !important;
+    background-size: initial !important;
+    padding: 6px 28px 6px 10px !important;
+    border-radius: 0px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    max-width: 180px;
+    border-radius: 4px;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtProductVendor {
+    font-size: 14px;
+    margin: 0;
+}
+
+.sh-shooraai-recoFbtContainer .sh-shooraai-fbtProductVendor a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sh-shooraai-product-original-price {
+    text-decoration: line-through;
+    margin: 0 8px 0 0;
+}
+
+.sh-shooraai-product-original-price:empty {
+    display: none;
+}
+
+.sh-shooraai-bundle-list-item_4 .sh-shooraai-fbtImageBox {
+    width: 19%;
+}
+
+@media screen and (max-width: 1024px) {
+    .sh-shooraai-bundle-list-item_4 .sh-shooraai-fbtImageBox {
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sh-shooraai-recoFbtContainer {
+        padding: 0 0 30px;
+    }
+    .sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtATCBox {
+        width: 100%;
+        max-width: 100%;
+    }
+    .sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductTitle {
+        max-width: 300px;
+        text-align: left !important;
+    }
+    .sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductPrice {
+        font-size: 12px;
+    }
+    .sh-shooraai-recoFbtContainer .sh-shooraai-product-variant-field {
+        max-width: 80px;
+    }
+    .sh-shooraai-recoFbtContainer .sh-shooraai-fbtDescRow .sh-shooraai-fbtProductTitle a {
+        font-size: 14px;
+    }
+    .sh-shooraai-fbtAddtocart {
+        width: 100%;
+    }
+    .sh-shooraai-bundle-list-item_2 .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+        width: 46%;
+        height: auto;
+    }
+    .sh-shooraai-bundle-list-item_3 .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+        width: 28%;
+        height: auto;
+    }
+    .sh-shooraai-bundle-list-item_4 .sh-shooraai-fbtImageRow .sh-shooraai-fbtImageBox {
+        width: 19%;
+        height: auto;
+    }
+    .sh-shooraai-recoFbtContainer .sh-shooraai-fbtImageRow .sh-shooraai-fbtImagePlusWrap {
+        width: 100%;
+    }
+}
